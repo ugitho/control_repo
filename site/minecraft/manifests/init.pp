@@ -4,7 +4,7 @@ class minecraft {
   }
   file {'/opt/minecraft/server.jar':
     ensure  => file,
-    source  => 'https://s3amazonaws.com/Minecraft.Download/version/1.16.1/minecraft_server.1.16.1.jar',
+    source  => 'https://s3.amazonaws.com/Minecraft.Download/version/1.16.1/minecraft_server.1.16.1.jar',
   }
   package {'java':
     ensure  => present,
