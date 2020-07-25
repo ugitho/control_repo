@@ -3,7 +3,7 @@ class minecraft {
     ensure  => directory,
   }
   file {'/opt/minecraft/server.jar':
-    ensire  => file,
+    ensure  => file,
     source  => 'https://s3amazonaws.com/Minecraft.Download/version/1.16.1/minecraft_server.1.16.1.jar',
   }
   package {'java':
